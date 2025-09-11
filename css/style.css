@@ -1,3 +1,32 @@
 body {
-    background-color: antiquewhite;
+    background-color: #f6efe4;
+}
+header {
+    background-color: #373636;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+}
+header nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+/*
+li a:hover {
+    color: aqua;
+}*/
+#logo {
+    height: 120px;
+    margin-right: 80px;
 }
