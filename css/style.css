@@ -34,11 +34,11 @@ li a:hover {
 
 /*LOGIN*/
 .login {
-    background-image: url(../img/formulario2.png);
+    background-image: url(../img/formulariologin.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.logologin {
+.logoformulario {
     display: block;
     margin: 40px auto 0px auto;
 }
@@ -71,7 +71,7 @@ form {
     margin-bottom: 20px;
     padding: 20px;
 }
-.ingresar {
+.enviar {
     background-color: #FF9800;
     color: white;
     border-radius: 10px;
@@ -79,13 +79,22 @@ form {
     font-size: 20px;
     font-weight: 500;
     width: 170px;
-    margin-bottom: 20px;
-    padding: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
-.sincuenta {
+.cuenta {
     color: cornsilk;
     font-size: 20px;
     font-weight: 500;
 }
 
-/*REGISTER*/
+/*REGISTRO*/
+.registro {
+    background-image: url(../img/formularioregistro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.terminos {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
