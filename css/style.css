@@ -1,6 +1,8 @@
 body {
     background-color: #f6efe4;
 }
+
+/*HEADER*/ 
 header {
     background-color: #373636;
     display: flex;
@@ -32,6 +34,9 @@ li a:hover {
 }
 
 
+
+/*HOME*/
+
 /*LOGIN*/
 .login {
     background-image: url(../img/formulariologin.png);
@@ -42,7 +47,7 @@ li a:hover {
     display: block;
     margin: 40px auto 0px auto;
 }
-h1 {
+.tituloformulario {
     color: antiquewhite;
     font-weight: 1200;
     letter-spacing: 5px;
