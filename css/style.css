@@ -1,5 +1,6 @@
 body {
     background-color: #f6efe4;
+    background-image: url(../img/fondo.png);
 }
 
 /*HEADER*/ 
@@ -20,9 +21,12 @@ header nav ul li a {
     list-style: none;
     text-decoration: none;
     color: white;
-    margin: 15px;
+    margin: 20px;
     font-family: "Open Sans", sans-serif;
-    font-size: 20px;
+    font-size: 27px;
+}
+header nav ul li {
+    color: white;
 }
 /*
 li a:hover {
@@ -30,12 +34,121 @@ li a:hover {
 }*/
 #logo {
     height: 120px;
-    margin-right: 80px;
+    margin-right: 150px;
+}
+.search {
+    margin-left: 200px;
 }
 
 
 
 /*HOME*/
+.contenedorpadre {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1140px;
+    margin: auto;
+    margin-top: 10px;
+}
+/*aside*/
+.categoriasI {
+    width: 320px;
+}
+.categoriasI nav ul {
+    list-style: none;
+}
+.categoriasI nav ul li {
+    background-color: white;
+    padding: 5px;
+    margin-top: 15px;
+    width: 60%;
+    border: solid #a09b9b;
+    border-radius: 10px;
+}
+.categoriasI nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #a09b9b;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.titulocategoria {
+    color: #FF9800;
+    font-family: "Open Sans", sans-serif;
+    font-size: 45px;
+    margin-left: 10%;
+}
+/*productos*/
+#sectionVendidos {
+    width: 800px;
+}
+#titulovendidos {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-left: 150px;
+}
+.masvendidos {
+    width: 800px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+.vendidos {
+    width: 220px;
+    /*background-color: #565353;*/
+    margin: 5px;
+    border: solid #a09b9b;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.vendidos h2 {
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    color: #FF9800;
+    text-align: center;
+}
+.vendidos p {
+    color: #373636;
+    margin-left: 3px;
+}
+.foto1 {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 150px;
+    border: solid #a09b9b;
+    background-color: #f6f3ec;
+    border-radius: 10px;
+    
+}
+.detalle {
+    width: 100px;
+    text-decoration: none;
+    background-color: #FF9800;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 3px;
+}
+.productosAleatorios{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+.tituloaleatorios {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
 
 /*LOGIN*/
 .login {
