@@ -225,3 +225,13 @@ form {
 }
 
 /*CATEGORIAS*/
+.categoriaCompleta {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+.sectionCategorias {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
