@@ -46,13 +46,16 @@ li a:hover {
 .contenedorpadre {
     display: flex;
     flex-wrap: wrap;
-    width: 1140px;
-    margin: auto;
+    width: 95%;
+   /* margin: auto;*/
     margin-top: 10px;
+    margin-left: 35px;
 }
 /*aside*/
 .categoriasI {
     width: 320px;
+    margin-left: 20px;
+    
 }
 .categoriasI nav ul {
     list-style: none;
@@ -137,7 +140,11 @@ li a:hover {
     border-radius: 5px;
     padding: 3px;
 }
+.sectionAleatorios {
+    width: 100%;
+}
 .productosAleatorios{
+    margin: auto;
     display: flex;
     justify-content: center; 
     flex-wrap: wrap;
