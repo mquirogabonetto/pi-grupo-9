@@ -4,6 +4,7 @@
 body {
     background-color: #f6efe4;
     background-image: url(../img/fondo.png);
+    
 }
 
 /*HEADER*/ 
@@ -51,8 +52,7 @@ li a:hover {
     flex-wrap: wrap;
     width: 95%;
    /* margin: auto;*/
-    margin-top: 10px;
-    margin-left: 35px;
+    margin: 10px 0px 60px 35px;
 }
 /*aside*/
 .categoriasI {
@@ -161,20 +161,26 @@ li a:hover {
 
 
 /*LOGIN*/
-.login {
+.mainlogin {
     background-image: url(../img/formulariologin.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
 }
-.logoformulario {
-    display: block;
-    margin: 40px auto 0px auto;
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55%; 
+  margin-bottom: 100px;
 }
+
 .tituloformulario {
     color: antiquewhite;
     font-weight: 1500;
     letter-spacing: 5px;
-    margin-top: 0px;
+    margin-top: 0%;
 }
 form {
     display: flex;
@@ -212,19 +218,30 @@ form {
 }
 .cuenta {
     color: cornsilk;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 500;
 }
 
 /*REGISTRO*/
-.registro {
+.mainregister{
     background-image: url(../img/formularioregistro.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+}
+.registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55%; 
+    margin-bottom: 70px;
 }
 .terminos {
     font-size: 20px;
+    color: antiquewhite;
     margin-bottom: 15px;
+    font-weight: 500;
 }
 
 
@@ -233,7 +250,6 @@ footer{
     background-color: #373636;
     display: flex;
     justify-content: center;
-    margin-top: 70px;
 }
 
 .nombres{
