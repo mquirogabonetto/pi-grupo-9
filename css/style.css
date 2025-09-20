@@ -228,29 +228,23 @@ form {
 }
 
 
+/*FOOTER*/
 footer{
     background-color: #373636;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
+    margin-top: 70px;
 }
 
 .nombres{
     color: white;
-    text-align: left;
-    margin-top: 70px;
-    margin-right: 20%;
-   
-
+    font-size: 25px;
+    margin: 50px 40px 30px 120px;
+    letter-spacing: 1px;
 }
 
-.logofooter{
-    display: flex;
-    justify-content: center;
-    height: 150px;
-    
-}
 
+/*PRODUCT*/
 .limonada{
     display: flex;
     flex-direction: row;
@@ -297,6 +291,9 @@ footer{
     text-align: center;
     background-color: gray;
 }
+
+
+
 /*CATEGORIAS*/
 .categoriaCompleta {
     display: flex;
