@@ -54,11 +54,11 @@ li a:hover {
    /* margin: auto;*/
     margin: 10px 0px 60px 35px;
 }
+
 /*aside*/
 .categoriasI {
     width: 320px;
     margin-left: 20px;
-    
 }
 .categoriasI nav ul {
     list-style: none;
@@ -166,15 +166,18 @@ li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .login {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 55%; 
-  margin-bottom: 100px;
+  justify-content: flex-start;
+  margin: auto;
 }
+
 
 .tituloformulario {
     color: antiquewhite;
@@ -228,15 +231,19 @@ form {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
+
 .registro {
-    display: flex;
     flex-direction: column;
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 55%; 
-    margin-bottom: 70px;
+    margin: auto;
 }
+    
 .terminos {
     font-size: 20px;
     color: antiquewhite;
@@ -323,6 +330,7 @@ footer{
     flex-wrap: wrap;
 }
 
+
 /*RESPONSIVE HOME*/
 @media (max-width: 460px) {
     header {
@@ -353,4 +361,37 @@ footer{
     height: 100px;
     margin: none;
 }
+}
+
+
+/*RESPONSIVE REGISTER*/
+@media (max-width: 460px) {
+    .mainregister{
+        flex-direction: column;
+    }
+    .titulocategoria {
+        text-align: center;
+        margin: 15px auto 15px auto;
+    }
+    .categoriasI {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .categoriasI nav {
+       width: 470px;
+    }
+    .categoriasI ul {
+        width: 600px;
+        margin: auto;
+    }
+    footer{
+    background-color: #373636;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .registro {
+    margin: 20px 0px 20px 0px;
+    }
 }
