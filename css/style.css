@@ -190,16 +190,7 @@ form {
     flex-direction: column;
     align-items: center; 
 }
-.cuadrado1 {
-    background-color: #0D0D0D;
-    border-radius: 5px; 
-    border: none;
-    font-size: 20px;
-    width: 400px;
-    margin-bottom: 20px;
-    padding: 20px;
-}
-.cuadrado2 {
+.cuadrado {
     background-color: #0D0D0D;
     border-radius: 5px; 
     border: none;
@@ -245,10 +236,10 @@ form {
 }
     
 .terminos {
-    font-size: 20px;
+    font-size: 23px;
     color: antiquewhite;
     margin-bottom: 15px;
-    font-weight: 500;
+    font-weight: 550;
 }
 
 
@@ -330,8 +321,7 @@ footer{
     flex-wrap: wrap;
 }
 
-
-/*RESPONSIVE HOME*/
+/*RESPONSIVE*/
 @media (max-width: 460px) {
     header {
     background-color: #373636;
@@ -361,12 +351,27 @@ footer{
     height: 100px;
     margin: none;
 }
-}
-
-
-/*RESPONSIVE REGISTER*/
-@media (max-width: 460px) {
+    /*posible solución
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    header nav ul {
+        display: flex;     
+        flex-direction: row;      
+        flex-wrap: nowrap; 
+        margin: 0;
+        padding: 0;
+    }
+    */
+    
     .mainregister{
+        flex-direction: column;
+    }
+    .mainlogin {
         flex-direction: column;
     }
     .titulocategoria {
@@ -376,22 +381,39 @@ footer{
     .categoriasI {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;  
     }
     .categoriasI nav {
-       width: 470px;
+       width: 490px;
     }
     .categoriasI ul {
         width: 600px;
-        margin: auto;
+        margin: 10px;
+    }
+    .login {
+        margin: 20px 0px 30px 0px;
+    }
+    .registro {
+    margin: 20px 0px 30px 0px;
+    }
+    .cuadrado {
+        width: 370px;
     }
     footer{
     background-color: #373636;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     }
-    .registro {
-    margin: 20px 0px 20px 0px;
+    .tituloformulario {
+        color: #3c872d;
     }
+    .nombres {
+        text-align: center;
+        font-size: 22px;
+        margin: 15px 0px 10px 0px;
+    }
+    .logo {
+        margin: 0%;
+    }
+    
 }
