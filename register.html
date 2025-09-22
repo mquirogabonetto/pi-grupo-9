@@ -7,17 +7,68 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="registro">
-    <img class= "logoformulario" src="./img/logo.png" alt="logo" width="250" height="250">
-    <form action="login.html" method="post">
-        <h1 class="tituloformulario">REGÍSTRATE</h1>
-        <input class= "cuadrado1" id= "email" type="email" name="email" placeholder="Email" required>
-        <input class= "cuadrado2" id= "password" type="password" name="password" placeholder="Contraseña" required>
-        <input class= "cuadrado2" id= "password2" type="password" name="password2" placeholder="Repite tu contraseña" required>
-        <span class="terminos"><input type="checkbox" id = "terminos" required>Acepto términos y condiciones</span>
-        <button class= "enviar" type="submit">Registrarme</button>
-        <a class= "cuenta" href="login.html">Ya tengo una cuenta</a>
-    </form> 
+<body>
+
+     <header>
+        <a href="./index.html"> <img class= "logo" src="./img/logo.png" alt="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a>|</li>
+                <li><a href="./login.html">Log In</a>|</li>
+                <li><a href="./register.html">Sign Up</a>|</li>
+                <li><a href= " " >Búsqueda 🔎</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainregister">
+         <aside class="categoriasI">
+            <h2 class="titulocategoria"><strong>Categorías</strong></h2>
+            <nav>
+                <ul>
+                    <li><a href="./category.html">Principales</a></li>
+                    <li><a href="./category.html">Hamburguesas</a></li>
+                    <li><a href="./category.html">Chicken Lovers</a></li>
+                    <li><a href="./category.html">Hot dogs</a></li>
+                    <li><a href="./category.html">Burritos</a></li>
+                    <li><a href="./category.html">Acompañamientos</a></li>
+                    <li><a href="./category.html">Snacks</a></li>
+                    <li><a href="./category.html">Ensaladas</a></li>
+                    <li><a href="./category.html">Healthy & Veggie</a></li>
+                    <li><a href="./category.html">Café & Té</a></li>
+                    <li><a href="./category.html">Cervezas/Drinks</a></li>
+                    <li><a href="./category.html">Postres</a></li>
+                    <li><a href="./category.html">Helados</a></li>
+                    <li><a href="./category.html">Más Vendidos</a></li>
+                    <li><a href="./category.html">Promos y Ofertas</a></li>
+                    <li><a href="./category.html">Combos</a></li>
+                    <li><a href="./category.html">Nuevos</a></li>
+                    <li><a href="./category.html">Otros</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+
+        <section class="registro">
+            <img src="./img/logo.png" alt="logo" width="250" height="250">
+            <form action="login.html" method="post">
+            <h1 class="tituloformulario">REGÍSTRATE</h1>
+            <input class= "cuadrado" id= "email" type="email" name="email" placeholder="Email" required>
+            <input class= "cuadrado" id= "password" type="password" name="password" placeholder="Contraseña" required>
+            <input class= "cuadrado" id= "password2" type="password" name="password2" placeholder="Repite tu contraseña" required>
+            <span class="terminos"><input type="checkbox" id = "terminos" required>Acepto términos y condiciones</span>
+            <button class= "enviar" type="submit">Registrarme</button>
+            <a class= "cuenta" href="login.html">Ya tengo una cuenta</a>
+            </form> 
+        </section>
+
+    </main>
+
+     <footer>
+        <h4 class="nombres">Victoria Quiroga, Victoria Cittanti y Catalina Perez Bertana</h4>
+        <a href="./index.html"> <img class= "logo" src="./img/logo.png" alt="logo"></a>
+    </footer>
+
 </body>
 
 </html>

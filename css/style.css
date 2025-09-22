@@ -4,6 +4,7 @@
 body {
     background-color: #f6efe4;
     background-image: url(../img/fondo.png);
+    
 }
 
 /*HEADER*/ 
@@ -51,14 +52,13 @@ li a:hover {
     flex-wrap: wrap;
     width: 95%;
    /* margin: auto;*/
-    margin-top: 10px;
-    margin-left: 35px;
+    margin: 10px 0px 60px 35px;
 }
+
 /*aside*/
 .categoriasI {
     width: 320px;
     margin-left: 20px;
-    
 }
 .categoriasI nav ul {
     list-style: none;
@@ -161,36 +161,36 @@ li a:hover {
 
 
 /*LOGIN*/
-.login {
+.mainlogin {
     background-image: url(../img/formulariologin.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.logoformulario {
-    display: block;
-    margin: 40px auto 0px auto;
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: auto;
 }
+
+
 .tituloformulario {
     color: antiquewhite;
-    font-weight: 1200;
+    font-weight: 1500;
     letter-spacing: 5px;
-    margin-top: 0px;
+    margin-top: 0%;
 }
 form {
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
-.cuadrado1 {
-    background-color: #0D0D0D;
-    border-radius: 5px; 
-    border: none;
-    font-size: 20px;
-    width: 400px;
-    margin-bottom: 20px;
-    padding: 20px;
-}
-.cuadrado2 {
+.cuadrado {
     background-color: #0D0D0D;
     border-radius: 5px; 
     border: none;
@@ -212,45 +212,53 @@ form {
 }
 .cuenta {
     color: cornsilk;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 500;
 }
 
 /*REGISTRO*/
-.registro {
+.mainregister{
     background-image: url(../img/formularioregistro.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
+
+.registro {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+    
 .terminos {
-    font-size: 20px;
+    font-size: 23px;
+    color: antiquewhite;
     margin-bottom: 15px;
+    font-weight: 550;
 }
 
 
+/*FOOTER*/
 footer{
     background-color: #373636;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
 }
 
 .nombres{
     color: white;
-    text-align: left;
-    margin-top: 70px;
-    margin-right: 20%;
-   
-
+    font-size: 25px;
+    margin: 50px 40px 30px 120px;
+    letter-spacing: 1px;
 }
 
-.logofooter{
-    display: flex;
-    justify-content: center;
-    height: 150px;
-    
-}
 
+/*PRODUCT*/
 .limonada{
     display: flex;
     flex-direction: row;
@@ -299,6 +307,9 @@ footer{
     text-align: center;
     background-color: gray;
 }
+
+
+
 /*CATEGORIAS*/
 .categoriaCompleta {
     display: flex;
@@ -312,7 +323,7 @@ footer{
     flex-wrap: wrap;
 }
 
-/*RESPONSIVE HOME*/
+/*RESPONSIVE*/
 @media (max-width: 460px) {
     header {
     background-color: #373636;
@@ -342,4 +353,69 @@ footer{
     height: 100px;
     margin: none;
 }
+    /*posible solución
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    header nav ul {
+        display: flex;     
+        flex-direction: row;      
+        flex-wrap: nowrap; 
+        margin: 0;
+        padding: 0;
+    }
+    */
+    
+    .mainregister{
+        flex-direction: column;
+    }
+    .mainlogin {
+        flex-direction: column;
+    }
+    .titulocategoria {
+        text-align: center;
+        margin: 15px auto 15px auto;
+    }
+    .categoriasI {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .categoriasI nav {
+       width: 490px;
+    }
+    .categoriasI ul {
+        width: 600px;
+        margin: 10px;
+    }
+    .login {
+        margin: 20px 0px 30px 0px;
+    }
+    .registro {
+    margin: 20px 0px 30px 0px;
+    }
+    .cuadrado {
+        width: 370px;
+    }
+    footer{
+    background-color: #373636;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .tituloformulario {
+        color: #3c872d;
+    }
+    .nombres {
+        text-align: center;
+        font-size: 22px;
+        margin: 15px 0px 10px 0px;
+    }
+    .logo {
+        margin: 0%;
+    }
+    
 }
