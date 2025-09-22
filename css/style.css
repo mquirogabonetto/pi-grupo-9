@@ -341,41 +341,37 @@ footer{
 
 /*RESPONSIVE*/
 @media (max-width: 460px) {
-    header {
-    background-color: #373636;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-    header nav ul {
-    list-style: none;
-    display: flex;
-    text-decoration: none;
+    /*header*/
+    body {
+        width: ;
+        margin: 0;
+        padding: 0;
     }
     header nav ul li a {
-    list-style: none;
-    text-decoration: none;
-    color: white;
-    margin: none;
-    font-family: "Open Sans", sans-serif;
-    font-size: 27px;
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 27px;
     }
     header nav ul li {
-    color: white;
+        color: white;
     }
     .logo {
     height: 100px;
-    margin: none;
-}
-
+    margin: 0;
+    }
+    .search {
+        margin: 0;
+    }
     header {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        
+        width: 100%;
+        margin: 0;
     }
     header nav ul {
         display: flex;     
@@ -384,13 +380,12 @@ footer{
         margin: 0;
         padding: 0;
     }
-    
-    .mainregister{
-        flex-direction: column;
+    /*HOME*/
+    .contenedorpadre {
+        margin: 0;
+        width: 100%;
     }
-    .mainlogin {
-        flex-direction: column;
-    }
+    /*aside*/
     .titulocategoria {
         text-align: center;
         margin: 15px auto 15px auto;
@@ -398,15 +393,35 @@ footer{
     .categoriasI {
         display: flex;
         flex-direction: column;
+
         align-items: center;  
+        width: 100%;
     }
     .categoriasI nav {
-       width: 490px;
+       width: 100%;
     }
     .categoriasI ul {
         width: 600px;
         margin: 10px;
     }
+    .sectionVendidos {
+        width: 100%;
+    }
+    .vendidos {
+        width: 27.5%;
+    }
+    .foto1 {
+        width: 80%;
+    }
+
+
+    .mainregister{
+        flex-direction: column;
+    }
+    .mainlogin {
+        flex-direction: column;
+    }
+    
     .login {
         margin: 20px 0px 30px 0px;
     }
