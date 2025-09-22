@@ -278,17 +278,19 @@ footer{
 }
 
 .cajaslimon div{
-    margin-top: 120px;
-    margin-bottom: 180px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     border: 2px solid black;
     border-radius: 10px;
+    padding: 10px;
+
     
     
 }
 
 .limonada .imagenlimon img{
     width: 100%;
-    height: 90%;
+    height: 20%;
 }
 
 .limonada .imagenlimon{
@@ -299,6 +301,7 @@ footer{
     width: 30%;
     border: 2px solid black;
     background-color: black;
+
 
     
 }
@@ -419,3 +422,18 @@ footer{
     }
     
 }
+
+.mainlimonada{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.titulocategoriaproduct {
+        text-align: center;
+        margin: 15px auto 15px auto;
+        font-size: 30px;
+        border: 7px dotted yellow
+    }
+
