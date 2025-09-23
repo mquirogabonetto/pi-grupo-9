@@ -40,9 +40,11 @@ li a:hover {
     height: 120px;
     margin-right: 150px;
 }
+
 .search {
     margin-left: 200px;
     display: flex;
+    
 }
 
 .busquedaForm {
@@ -51,8 +53,9 @@ li a:hover {
     border-radius: 10px;
     border: solid white;
     height: 25px;
-    width: 150px;
+    width: 160px;
     color: white;
+    
 }
 .lupita {
     height: 30px;
@@ -64,14 +67,13 @@ li a:hover {
     display: flex;
     flex-wrap: wrap;
     width: 95%;
-   /* margin: auto;*/
-    margin: 10px 0px 60px 35px;
+    margin-bottom: 30px;
 }
 
 /*aside*/
 .categoriasI {
-    width: 320px;
-    margin-left: 20px;
+    width: 400px;
+    margin-left: 25px;
 }
 .categoriasI nav ul {
     list-style: none;
@@ -96,7 +98,7 @@ li a:hover {
     color: #FF9800;
     font-family: "Open Sans", sans-serif;
     font-size: 45px;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 /*productos*/
 #sectionVendidos {
@@ -139,8 +141,8 @@ li a:hover {
 .foto1 {
     display: block;
     margin: auto;
-    width: 80%;
-    height: 150px;
+    width: 85%;
+    height: 170px;
     border: solid #a09b9b;
     background-color: #f6f3ec;
     border-radius: 10px;
@@ -211,6 +213,7 @@ form {
     width: 400px;
     margin-bottom: 20px;
     padding: 20px;
+    color: white;
 }
 .enviar {
     background-color: #FF9800;
@@ -272,59 +275,64 @@ footer{
 
 
 /*PRODUCT*/
-.limonada{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    background-color: gray;
-
+.product {
+    width: 70%;
+    margin-top: 150px;
 }
-
-.limonada .cajaslimon{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-top: 100px;
-    
-}
-
-.cajaslimon div{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 10px;
-
-    
-    
-}
-
-.limonada .imagenlimon img{
-    width: 100%;
-    height: 20%;
-}
-
-.limonada .imagenlimon{
-    margin-top: 100px;
-    margin-bottom: 100px;
-
-    height: 90%;
+.imglimonada {
+    margin: 10px;
     width: 30%;
-    border: 2px solid black;
-    background-color: black;
-
-
-    
+    height: 350px;
+    border: solid #a09b9b;
+    background-color: #f6f3ec;
+    border-radius: 10px;
 }
-
-.limonadarica h1{
+.limonada {
+    border: solid #a09b9b;
+    background-color: #f6f3ec;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+.detalleproduct {
+    margin-left: 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+.titulolimonada {
+    color: #FF9800; 
+}
+.tituloreviews {
     text-align: center;
-    background-color: gray;
+    color: #FF9800; 
+}
+.reviews {
+    border: solid #a09b9b;
+    background-color: #f6f3ec;
+    border-radius: 10px; 
+    margin-top: 15px; 
+    padding: 1px;
+}
+.review {
+    border-radius: 10px;
+    padding: 2px;
+    margin-bottom: 20px; 
+}
+.usuario {
+    background-color:  #e3dede;
+    border-radius: 10px;
+    padding: 2px;
+    margin-left: 5px;
 }
 
-
+/*SEARCH-RESULTS*/
+.resultadosencontrados {
+    width: 100%;
+    margin-top: 35px;
+    margin-left: 25px;
+    font-size: 20px;
+}
 
 /*CATEGORIAS*/
 .categoriaCompleta {
@@ -338,6 +346,17 @@ footer{
     justify-content: center; 
     flex-wrap: wrap;
 }
+.tituloAcompañamientos {
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+    font-size: 40px;
+    height: 0;
+}
+
+
+
+
 
 /*RESPONSIVE*/
 @media (max-width: 460px) {
@@ -368,7 +387,7 @@ footer{
     .logo {
     height: 100px;
     margin: none;
-}
+    }
 
     header {
         display: flex;
@@ -435,17 +454,5 @@ footer{
     
 }
 
-.mainlimonada{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
 
-.titulocategoriaproduct {
-        text-align: center;
-        margin: 15px auto 15px auto;
-        font-size: 30px;
-        border: 7px dotted yellow
-    }
 
