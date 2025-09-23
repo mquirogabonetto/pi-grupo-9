@@ -379,11 +379,9 @@ footer{
     }
     .logo {
     height: 100px;
-    margin: 0;
+    margin: none;
     }
-    .search {
-        margin: 0;
-        }
+
     header {
         display: flex;
         flex-direction: row;
