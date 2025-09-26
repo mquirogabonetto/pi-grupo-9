@@ -1,10 +1,6 @@
-
-
-
 body {
     background-color: #f6efe4;
     background-image: url(../img/fondo.png);
-    
 }
 
 /*HEADER*/ 
@@ -32,21 +28,15 @@ header nav ul li a {
 header nav ul li {
     color: white;
 }
-/*
-li a:hover {
-    color: aqua;
-}*/
 .logo {
     height: 120px;
     margin-right: 150px;
 }
-
 .search {
     margin-left: 200px;
     display: flex;
     
 }
-
 .busquedaForm {
     margin-right: 3px;
     background-color: #373636;
@@ -55,7 +45,6 @@ li a:hover {
     height: 25px;
     width: 160px;
     color: white;
-    
 }
 .lupita {
     height: 30px;
@@ -72,7 +61,6 @@ li a:hover {
 
 /*aside*/
 .categoriasI {
-    /*width: 400px;*/
     width: 35%;
     margin-left: 25px;
 }
@@ -103,7 +91,6 @@ li a:hover {
 }
 /*productos*/
 .sectionVendidos {
-   /* width: 800px;*/
    width: 60%;
 }
 .titulovendidos {
@@ -121,7 +108,6 @@ li a:hover {
 }
 .vendidos {
     width: 220px;
-    /*background-color: #565353;*/
     margin: 5px;
     border: solid #a09b9b;
     border-radius: 10px;
@@ -148,7 +134,6 @@ li a:hover {
     border: solid #a09b9b;
     background-color: #f6f3ec;
     border-radius: 10px;
-    
 }
 .detalle {
     width: 100px;
@@ -164,13 +149,12 @@ li a:hover {
 
 /*LOGIN*/
 .mainlogin {
-    background-image: url(../img/formulariologin.png);
+    background-image: url(../img/formulario-login.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
 }
-
 .login {
   display: flex;
   flex-direction: column;
@@ -184,8 +168,6 @@ li a:hover {
 .logo2 {
     width: 35%;
 }
-
-
 .tituloformulario {
     color: antiquewhite;
     font-weight: 1500;
@@ -226,7 +208,7 @@ form {
 
 /*REGISTRO*/
 .mainregister{
-    background-image: url(../img/formularioregistro.png);
+    background-image: url(../img/formulario-registro.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -246,7 +228,7 @@ form {
 .terminos {
     font-size: 23px;
     color: antiquewhite;
-    
+    margin-bottom: 3%;
     font-weight: 550;
 }
 
@@ -257,7 +239,6 @@ footer{
     display: flex;
     justify-content: center;
 }
-
 .nombres{
     color: white;
     font-size: 25px;
@@ -352,7 +333,7 @@ footer{
 
 
 /*RESPONSIVE*/
-@media (max-width: 460px) {
+@media (max-width: 420px) {
     /*header*/
     * {
         box-sizing: border-box;
@@ -377,7 +358,6 @@ footer{
         height: 100px;
         margin: 0;
     }
-
     header {
         display: flex;
         flex-direction: row;
@@ -397,13 +377,13 @@ footer{
     .contenedorpadre {
         margin: 0;
         width: 100%;
+        margin-bottom: 5%;
     }
     /*aside*/
     .titulocategoria {
         text-align: center;
         margin: 0;
         margin-top: 2%;
-      /*  margin: 15px auto 15px auto;*/
     }
     .categoriasI {
         display: flex;
@@ -411,19 +391,16 @@ footer{
         align-items: center;  
         width: 100%;
         margin: 0;
-      
     }
     .categoriasI nav {
        width: 100%;
        align-items: center; 
        margin: 0;
        margin-right: 10%;
-      
     }
     .categoriasI ul {
         width: 100%;
         margin: 0;
-        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -432,21 +409,22 @@ footer{
         width: 100%;
     }
     .vendidos {
-        width: 40%;   
-        margin: 3px;   
+        width: 43%;   
+        margin: 5px;   
+    }
+    .vendidos h2 {
+        font-size: 20px;
     }
     .foto1 {
         width: 80%;
     }
-    .titulovendidos {
-        width: 90%;
-        margin-left: 6%;
-        font-size: 37px;
+    .detalle {
+        font-size: 17px;
     }
-    .tituloaleatorios {
-        width: 90%;
-        margin-left: 6%;
-        font-size: 37px;
+    .titulovendidos {
+        width: 80%;
+        margin-left: 12%;
+        font-size: 30px;
     }
 
     /*categoria*/
@@ -457,14 +435,12 @@ footer{
         margin-bottom: 15%;
         margin-top: 15%;
     }
-
     .mainregister{
         flex-direction: column;
     }
     .mainlogin {
         flex-direction: column;
     }
-    
     .login {
         width: 100%;
         height: 500px;
@@ -477,9 +453,9 @@ footer{
         width: 370px;
     }
     footer{
-    background-color: #373636;
-    display: flex;
-    flex-wrap: wrap;
+        background-color: #373636;
+        display: flex;
+        flex-wrap: wrap;
     }
     .tituloformulario {
         color: #3c872d;
@@ -497,6 +473,7 @@ footer{
     }
     .imglimonada {
         height: 30%;
+        margin-top: 30%;
     }
 }
 
