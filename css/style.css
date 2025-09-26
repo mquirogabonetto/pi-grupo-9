@@ -1,9 +1,8 @@
 body {
-    background-color: #f6efe4;
     background-image: url(../img/fondo.png);
 }
 
-/*HEADER*/ 
+/*HEADER*/
 header {
     background-color: #373636;
     display: flex;
@@ -12,31 +11,35 @@ header {
     align-items: center;
     height: 150px;
 }
+
 header nav ul {
     list-style: none;
     display: flex;
     text-decoration: none;
 }
+
 header nav ul li a {
-    list-style: none;
     text-decoration: none;
     color: white;
     margin: 20px;
-    font-family: "Open Sans", sans-serif;;
+    font-family: "Open Sans", sans-serif;  
     font-size: 27px;
 }
+
 header nav ul li {
     color: white;
 }
+
 .logo {
     height: 120px;
     margin-right: 150px;
 }
+
 .search {
     margin-left: 200px;
     display: flex;
-    
 }
+
 .busquedaForm {
     margin-right: 3px;
     background-color: #373636;
@@ -46,6 +49,7 @@ header nav ul li {
     width: 160px;
     color: white;
 }
+
 .lupita {
     height: 30px;
 }
@@ -64,9 +68,11 @@ header nav ul li {
     width: 35%;
     margin-left: 25px;
 }
+
 .categoriasI nav ul {
     list-style: none;
 }
+
 .categoriasI nav ul li {
     background-color: white;
     padding: 5px;
@@ -75,7 +81,8 @@ header nav ul li {
     border: solid #a09b9b;
     border-radius: 10px;
 }
-.categoriasI nav ul li a{
+
+.categoriasI nav ul li a {
     display: block;
     text-decoration: none;
     color: #a09b9b;
@@ -83,16 +90,19 @@ header nav ul li {
     font-size: 20px;
     text-align: center;
 }
+
 .titulocategoria {
     color: #FF9800;
     font-family: "Open Sans", sans-serif;
     font-size: 45px;
     margin-left: 12%;
 }
+
 /*productos*/
 .sectionVendidos {
-   width: 60%;
+    width: 60%;
 }
+
 .titulovendidos {
     font-family: "Anton", sans-serif;
     font-style: normal;
@@ -100,12 +110,14 @@ header nav ul li {
     margin-left: 150px;
     width: 100%;
 }
+
 .masvendidos {
     width: 800px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     flex-wrap: wrap;
 }
+
 .vendidos {
     width: 220px;
     margin: 5px;
@@ -115,6 +127,7 @@ header nav ul li {
     display: flex;
     flex-direction: column;
 }
+
 .vendidos h2 {
     margin: auto;
     font-family: "Open Sans", sans-serif;
@@ -122,10 +135,12 @@ header nav ul li {
     color: #FF9800;
     text-align: center;
 }
+
 .vendidos p {
     color: #373636;
     margin-left: 3px;
 }
+
 .foto1 {
     display: block;
     margin: auto;
@@ -135,6 +150,7 @@ header nav ul li {
     background-color: #f6f3ec;
     border-radius: 10px;
 }
+
 .detalle {
     width: 100px;
     text-decoration: none;
@@ -155,33 +171,37 @@ header nav ul li {
     display: flex;
     justify-content: center;
 }
-.login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 0;
-  width: 50%;
-  margin-top: 5%;
-  margin-right: 10%;
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 50%;
+    margin-top: 5%;
+    margin-right: 10%;
 }
+
 .logo2 {
     width: 35%;
 }
+
 .tituloformulario {
     color: antiquewhite;
     font-weight: 1500;
     letter-spacing: 5px;
     margin-top: 0%;
 }
+
 form {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
+
 .cuadrado {
     background-color: #0D0D0D;
-    border-radius: 5px; 
+    border-radius: 5px;
     border: none;
     font-size: 20px;
     width: 400px;
@@ -189,6 +209,7 @@ form {
     padding: 20px;
     color: white;
 }
+
 .enviar {
     background-color: #FF9800;
     color: white;
@@ -200,6 +221,7 @@ form {
     margin-bottom: 10px;
     padding: 10px;
 }
+
 .cuenta {
     color: cornsilk;
     font-size: 23px;
@@ -207,24 +229,13 @@ form {
 }
 
 /*REGISTRO*/
-.mainregister{
+.mainregister {
     background-image: url(../img/formulario-registro.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
 }
 
-.registro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0;
-    width: 50%;
-    margin-top: 5%;
-    margin-right: 10%;
-}
-    
 .terminos {
     font-size: 23px;
     color: antiquewhite;
@@ -234,12 +245,13 @@ form {
 
 
 /*FOOTER*/
-footer{
+footer {
     background-color: #373636;
     display: flex;
     justify-content: center;
 }
-.nombres{
+
+.nombres {
     color: white;
     font-size: 25px;
     margin: 50px 40px 30px 120px;
@@ -252,6 +264,7 @@ footer{
     width: 60%;
     margin-top: 150px;
 }
+
 .imglimonada {
     margin: 10px;
     width: 30%;
@@ -260,6 +273,7 @@ footer{
     background-color: #f6f3ec;
     border-radius: 10px;
 }
+
 .limonada {
     border: solid #a09b9b;
     background-color: #f6f3ec;
@@ -268,32 +282,38 @@ footer{
     margin-bottom: 15px;
     padding: 8px;
 }
+
 .detalleproduct {
     margin-left: 30px;
     font-size: 20px;
     padding: 10px;
 }
+
 .titulolimonada {
-    color: #FF9800; 
+    color: #FF9800;
 }
+
 .tituloreviews {
     text-align: center;
-    color: #FF9800; 
+    color: #FF9800;
 }
+
 .reviews {
     border: solid #a09b9b;
     background-color: #f6f3ec;
-    border-radius: 10px; 
-    margin-top: 15px; 
+    border-radius: 10px;
+    margin-top: 15px;
     padding: 1px;
 }
+
 .review {
     border-radius: 10px;
     padding: 2px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
+
 .usuario {
-    background-color:  #e3dede;
+    background-color: #e3dede;
     border-radius: 10px;
     padding: 2px;
     margin-left: 5px;
@@ -310,15 +330,17 @@ footer{
 /*CATEGORIAS*/
 .categoriaCompleta {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     flex-wrap: wrap;
 }
+
 .sectionCategorias {
     width: 800px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     flex-wrap: wrap;
 }
+
 .tituloAcompañamientos {
     display: flex;
     justify-content: center;
@@ -334,15 +356,18 @@ footer{
 
 /*RESPONSIVE*/
 @media (max-width: 420px) {
+
     /*header*/
     * {
         box-sizing: border-box;
         max-width: 100%;
     }
+
     body {
         margin: 0;
         padding: 0;
     }
+
     header nav ul li a {
         list-style: none;
         text-decoration: none;
@@ -351,13 +376,16 @@ footer{
         font-family: "Open Sans", sans-serif;
         font-size: 20px;
     }
+
     header nav ul li {
         color: white;
     }
+
     .logo {
         height: 100px;
         margin: 0;
     }
+
     header {
         display: flex;
         flex-direction: row;
@@ -366,38 +394,44 @@ footer{
         width: 100%;
         margin: 0;
     }
+
     header nav ul {
-        display: flex;     
-        flex-direction: row;      
-        flex-wrap: nowrap; 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
         margin: 0;
         padding: 0;
     }
+
     /*HOME*/
     .contenedorpadre {
         margin: 0;
         width: 100%;
         margin-bottom: 5%;
     }
+
     /*aside*/
     .titulocategoria {
         text-align: center;
         margin: 0;
         margin-top: 2%;
     }
+
     .categoriasI {
         display: flex;
         flex-direction: column;
-        align-items: center;  
+        align-items: center;
         width: 100%;
         margin: 0;
     }
+
     .categoriasI nav {
-       width: 100%;
-       align-items: center; 
-       margin: 0;
-       margin-right: 10%;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        margin-right: 10%;
     }
+
     .categoriasI ul {
         width: 100%;
         margin: 0;
@@ -405,22 +439,28 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+
     .sectionVendidos {
         width: 100%;
     }
+
     .vendidos {
-        width: 43%;   
-        margin: 5px;   
+        width: 43%;
+        margin: 5px;
     }
+
     .vendidos h2 {
         font-size: 20px;
     }
+
     .foto1 {
         width: 80%;
     }
+
     .detalle {
         font-size: 17px;
     }
+
     .titulovendidos {
         width: 80%;
         margin-left: 12%;
@@ -429,53 +469,56 @@ footer{
 
     /*categoria*/
     .tituloAcompañamientos {
-         margin-left: 6%;
+        margin-left: 6%;
         font-size: 37px;
         margin: 3px;
         margin-bottom: 15%;
         margin-top: 15%;
     }
-    .mainregister{
+
+    .mainregister {
         flex-direction: column;
     }
+
     .mainlogin {
         flex-direction: column;
     }
-    .login {
+
+    .formularios {
         width: 100%;
         height: 500px;
     }
-    .registro {
-        width: 100%;
-        height: 700px;
-    }
+
     .cuadrado {
         width: 370px;
     }
-    footer{
+
+    footer {
         background-color: #373636;
         display: flex;
         flex-wrap: wrap;
     }
+
     .tituloformulario {
         color: #3c872d;
     }
+
     .nombres {
         text-align: center;
         font-size: 22px;
         margin: 15px 0px 10px 0px;
     }
+
     .logo {
         margin: 0%;
     }
+
     .product {
         width: 100%;
     }
+
     .imglimonada {
         height: 30%;
         margin-top: 30%;
     }
 }
-
-
-
