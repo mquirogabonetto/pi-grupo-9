@@ -267,7 +267,7 @@ footer {
     margin-top: 150px;
 }
 
-.imglimonada {
+.imgProducto {
     margin: 10px;
     width: 30%;
     height: 350px;
@@ -276,7 +276,7 @@ footer {
     border-radius: 10px;
 }
 
-.limonada {
+.productoDetalle {
     border: solid #a09b9b;
     background-color: #f6f3ec;
     border-radius: 10px;
@@ -291,7 +291,7 @@ footer {
     padding: 10px;
 }
 
-.titulolimonada {
+.titulo-producto {
     color: #FF9800;
 }
 
