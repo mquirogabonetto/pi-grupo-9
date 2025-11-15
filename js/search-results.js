@@ -17,3 +17,5 @@ fetch("https://dummyjson.com/products/category-list")
   .catch(function(error) {
     console.error("Error: ", error);
   });
+
+  

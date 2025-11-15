@@ -17,3 +17,39 @@ fetch("https://dummyjson.com/products/category-list")
   .catch(function(error) {
     console.error("Error: ", error);
   });
+
+/*Formulario Register*/
+let formulario = document.querySelector("#formregistro");
+let email = document.querySelector("#email");
+let password = document.querySelector("#password");
+let segundaPassword = document.querySelector("#password2");
+let checkbox = document.querySelector("#tyc");
+let errorEmail = document.querySelector("#error1");
+let errorPassword = document.querySelector("#error2");
+let errorSegundaPassword = document.querySelector("#error3");
+let errorCheckbox = document.querySelector("#error4");
+
+formulario.addEventListener("submit", function(event) {
+    event.preventDefault();
+    errorEmail.innerText = "";
+    errorPassword.innerText = "";
+    errorSegundaPassword.innerText = "";
+    errorCheckbox.innerText = "";
+    if (email.value === "") {
+		errorEmail.innerText = "El email es obligatorio.";
+	} if (password.value === "") {
+		errorPassword.innerText = "La contraseña es obligatoria.";
+	} else if (password.value.length < 6) {
+    errorPassword.innerText = "La contraseña debe tener al menos 6 caracteres.";
+	} if (segundaPassword.value === "") {
+      errorSegundaPassword.innerText = "Debes repetir tu contraseña.";
+  } else if (password.value !== "" && password.value !== segundaPassword.value) {
+        errorSegundaPassword.innerText = "Las contraseñas no coinciden.";
+	
+	} if (!checkbox.checked) {
+		errorCheckbox.innerText = "Debes aceptar los términos y condiciones.";
+		
+	} if (email.value && password.value.length >= 6 && password.value === segundaPassword.value && checkbox.checked) {
+    window.location.href = "./login.html";
+  } 
+});

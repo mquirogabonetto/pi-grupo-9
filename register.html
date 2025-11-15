@@ -64,12 +64,16 @@
 
         <section class="formularios">
             <img class="logo2" src="./img/logo.png">
-            <form action="login.html" method="get">
+            <form id = "formregistro">
                 <h1 class="tituloformulario">REGÍSTRATE</h1>
-                <input class="cuadrado" value="" type="email" name="email" placeholder="Email" required>
-                <input class="cuadrado" value="" type="password" name="password" placeholder="Contraseña" required>
-                <input class="cuadrado" value="" type="password" name="password2" placeholder="Repite tu contraseña" required>
-                <span class="terminos"><input type="checkbox" required>Acepto términos y condiciones</span>
+                <p id="error1" class="error"></p>
+                <input id="email" class="cuadrado" value="" type="email" name="email" placeholder="Email">
+                <p id="error2" class="error"></p>
+                <input id="password" class="cuadrado" value="" type="password" name="password" placeholder="Contraseña">
+                <p id="error3" class="error"></p>
+                <input id="password2" class="cuadrado" value="" type="password" name="password2" placeholder="Repite tu contraseña">
+                <span  class="terminos"><input id="tyc" type="checkbox">Acepto términos y condiciones</span>
+                <p id="error4" class="error"></p>
                 <button class="enviar" type="submit">Registrarme</button>
                 <a class="cuenta" href="login.html">Ya tengo una cuenta</a>
             </form>

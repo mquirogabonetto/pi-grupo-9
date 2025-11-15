@@ -524,3 +524,10 @@ footer {
         margin-top: 30%;
     }
 }
+
+/*JAVA*/
+.error {
+    color: #f7f7f6;
+    font-weight: 700;
+    font-size: 20px;
+}
