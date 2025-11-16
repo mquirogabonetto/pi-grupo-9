@@ -36,7 +36,7 @@ formulario.addEventListener("submit", function(event) {
     errorSegundaPassword.innerText = "";
     errorCheckbox.innerText = "";
     if (email.value === "") {
-		errorEmail.innerText = "El email es obligatorio.";
+		errorEmail.innerText = "*El email es obligatorio*";
 	} if (password.value === "") {
     errorPassword.innerText = "La contraseña es obligatoria.";
 	} else if (password.value.length < 6) {

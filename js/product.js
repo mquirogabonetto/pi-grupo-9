@@ -28,17 +28,17 @@ function generarReviews(reviews) {
     if (!reviews) {
         return '<p>No hay reviews disponibles para este producto.</p>';
     }
-    
+     
     let reviewsHTML = '';
-    reviews.forEach(review => {
+    for (let i = 0; i < reviews.length; i ++) {
         reviewsHTML += `
             <div class="reviews">
-                <p><strong class="usuario">Calificación:</strong> ${review.rating}/5 ⭐</p>
-                <p><strong class="usuario">Comentario:</strong> ${review.comment}</p>
-                <p><strong class="usuario">Usuario:</strong> ${review.reviewerName}</p>
+                <p><strong class="usuario">Calificación:</strong> ${reviews[i].rating}/5 ⭐</p>
+                <p><strong class="usuario">Comentario:</strong> ${reviews[i].comment}</p>
+                <p><strong class="usuario">Usuario:</strong> ${reviews[i].reviewerName}</p>
             </div>
         `;
-    });
+    }
     return reviewsHTML;
 }
 

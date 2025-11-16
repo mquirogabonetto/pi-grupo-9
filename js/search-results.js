@@ -35,6 +35,8 @@ fetch(url)
     let productos = data.products;
     let productosHtml = "";
     console.log("PRODUCTOS:", data.products);
+
+
     if (productos.length === 0) {
        tituloPag.innerHTML = `<h1>No hay resultados para el término: ${terminoBuscado}</h1>`;
     } else {
