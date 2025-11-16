@@ -25,9 +25,12 @@ let parametro = new URLSearchParams(qs);
 let terminoBuscado = parametro.get("busqueda");
 let tituloPag = document.querySelector(".resultadosencontrados");
 let contenedorProductos = document.querySelector(".categoriaCompleta");
-let url = "https://dummyjson.com/products/search?q=" + terminoBuscado;
 
-fetch(url)
+if (terminoBuscado.length < 3){
+  alert('La busqueda debe tener al menos 3 caracteres')
+} else{
+  let url = "https://dummyjson.com/products/search?q=" + terminoBuscado;
+  fetch(url)
   .then(function(response) {
     return response.json();
   })
@@ -40,7 +43,7 @@ fetch(url)
     if (productos.length === 0) {
        tituloPag.innerHTML = `<h1>No hay resultados para el término: ${terminoBuscado}</h1>`;
     } else {
-      tituloPag.innerHTML = '<h1>Resultados de búsqueda para: ' + terminoBuscado + '</h1>';
+      tituloPag.innerHTML = '<h1 class="busquedaResult" >Resultados de búsqueda para: ' + terminoBuscado + '</h1>';
       for (let i = 0; i < productos.length; i++) {
         productosHtml += 
           '<article class="vendidos">' +
@@ -60,4 +63,7 @@ fetch(url)
     tituloPag.innerHTML = '<p>Error al cargar los resultados</p>';
     contenedorProductos.innerHTML = "<p>Error al cargar productos.</p>";
   });
+}
+
+
 
