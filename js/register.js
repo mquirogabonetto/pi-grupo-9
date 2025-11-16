@@ -38,13 +38,13 @@ formulario.addEventListener("submit", function(event) {
     if (email.value === "") {
 		errorEmail.innerText = "El email es obligatorio.";
 	} if (password.value === "") {
-		errorPassword.innerText = "La contraseña es obligatoria.";
+    errorPassword.innerText = "La contraseña es obligatoria.";
 	} else if (password.value.length < 6) {
     errorPassword.innerText = "La contraseña debe tener al menos 6 caracteres.";
 	} if (segundaPassword.value === "") {
-      errorSegundaPassword.innerText = "Debes repetir tu contraseña.";
+    errorSegundaPassword.innerText = "Debes repetir tu contraseña.";
   } else if (password.value !== "" && password.value !== segundaPassword.value) {
-        errorSegundaPassword.innerText = "Las contraseñas no coinciden.";
+    errorSegundaPassword.innerText = "Las contraseñas no coinciden.";
 	
 	} if (!checkbox.checked) {
 		errorCheckbox.innerText = "Debes aceptar los términos y condiciones.";
