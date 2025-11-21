@@ -18,6 +18,22 @@ fetch("https://dummyjson.com/products/category-list")
     console.error("Error: ", error);
   });
 
+/*Validaciones Búsqueda*/
+let formularioBusqueda = document.querySelector(".form-busqueda");
+let inputBusqueda = document.querySelector(".busquedaForm");
+
+formularioBusqueda.addEventListener("submit", function(event) {
+  event.preventDefault();
+  if (inputBusqueda.value === "") {
+    alert("No se puede dejar el campo de búsqueda en blanco");
+  } else if (inputBusqueda.value.length < 3) {
+    alert("El término debe tener al menos 3 caracteres");
+  } else {
+    this.submit();
+  }
+});
+
+/*Login js*/
 let formulariolog = document.querySelector(".form-login") 
 let inputemail = document.querySelector(".inputlogin")
 let inputcontra = document.querySelector(".contraseña")
