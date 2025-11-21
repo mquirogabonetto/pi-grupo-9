@@ -22,7 +22,7 @@ fetch("https://dummyjson.com/products/category-list")
 let formularioBusqueda = document.querySelector(".form-busqueda");
 let inputBusqueda = document.querySelector(".busquedaForm");
 
-formularioBusqueda.addEventListener("submit", function(event) {
+formularioBusqueda.addEventListener("submit", function (event) {
   event.preventDefault();
   if (inputBusqueda.value === "") {
     alert("No se puede dejar el campo de búsqueda en blanco");
