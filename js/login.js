@@ -18,12 +18,14 @@ formulariolog.addEventListener("submit", function (e) {
    } else if (password === ""){
       e.preventDefault()
       alert("Debe completar el campo Contraseña")
-   } else if (password.length > 0 && password.length < 6){
+   } else if (password.length < 6 ){
       e.preventDefault()
       alert("La contraseña debe tener al menos 6 caracteres")
    } else {
       
       localStorage.setItem("emailUsuario", email);
+      
+      formulariolog.submit();
       
    }
    
