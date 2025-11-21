@@ -14,8 +14,11 @@ if (usuarioGuardado != null) {
 
              if (opcion === "Log In|"){
                 listas[i].innerHTML = `
-                    Bienvenido: ${usuarioGuardado}
+                    <span class="welcome-message">Bienvenido: ${usuarioGuardado}</span>
                     <a href="./index.html" id="logout">Logout </a>`
+             }
+             if (opcion === "Sign Up"){
+                listas[i].style.display = 'none';
              }
         }
     }

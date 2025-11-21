@@ -29,7 +29,16 @@ header nav ul li a {
 header nav ul li {
     color: white;
 }
-
+.welcome-message{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-family: "Open Sans", sans-serif;  
+    font-size: 22px;
+}
+#logout {
+    font-size: 25px;
+}
 .logo {
     height: 120px;
     margin-right: 150px;
