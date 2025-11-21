@@ -14,7 +14,7 @@ if(logout){
                 listas[i].innerHTML = `<a href="./login.html">Log In</a>`
             }
             
-            if (listas[i].innerText === "Sign Up") {
+            if (listas[i].innerText === "Sign Up |") {
                 listas[i].style.display = "block"
             }
         }
