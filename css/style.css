@@ -70,6 +70,7 @@ header nav ul li {
     flex-wrap: wrap;
     width: 95%;
     margin-bottom: 30px;
+    align-items: flex-start;
 }
 
 /*aside*/
@@ -136,6 +137,7 @@ header nav ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 500px;
 }
 
 .vendidos h2 {
@@ -342,6 +344,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .sectionCategorias {
