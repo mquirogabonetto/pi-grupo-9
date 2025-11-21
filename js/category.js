@@ -37,7 +37,7 @@ formularioBusqueda.addEventListener("submit", function(event) {
 let qs = location.search;
 let parametro = new URLSearchParams(qs);
 let categoriaSeleccionada = parametro.get("category");
-let tituloPag = document.querySelector(".tituloAcompañamientos");
+let tituloPag = document.querySelector(".tituloAcompanamientos");
 let contenedorProductos = document.querySelector(".categoriaCompleta");
 tituloPag.innerText = categoriaSeleccionada.toUpperCase();
 let url = "https://dummyjson.com/products/category/" + categoriaSeleccionada ;

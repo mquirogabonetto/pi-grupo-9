@@ -279,7 +279,6 @@ footer {
 .imgProducto {
     margin: 10px;
     width: 30%;
-    height: 350px;
     border: solid #a09b9b;
     background-color: #f6f3ec;
     border-radius: 10px;
@@ -350,14 +349,14 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+   height: auto;
 }
 
-.tituloAcompañamientos {
+.tituloAcompanamientos {
     display: flex;
     justify-content: center;
     margin-top: 85px;
     font-size: 50px;
-    height: 0;
     font-family: "Anton", sans-serif;
 }
 
@@ -369,6 +368,10 @@ footer {
     * {
         box-sizing: border-box;
         max-width: 100%;
+    }
+
+    main{
+            min-height: 1000px;
     }
 
     body {
@@ -476,12 +479,12 @@ footer {
     }
 
     /*categoria*/
-    .tituloAcompañamientos {
+    .tituloAcompanamientos {
         margin-left: 6%;
         font-size: 37px;
         margin: 3px;
-        margin-bottom: 15%;
         margin-top: 15%;
+        margin-bottom: 0px;
     }
 
     .mainregister {
@@ -539,3 +542,8 @@ footer {
     font-weight: 700;
     font-size: 20px;
 }
+.dinamico {
+    text-decoration: none;
+    color: #e98c02;
+}
+

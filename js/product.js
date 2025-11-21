@@ -74,8 +74,8 @@ fetch(url)
                         <h1 class="titulo-producto">${data.title}</h1>
                         <p><strong>Marca: </strong>${data.brand || 'Grill House'}</p>
                         <p><strong>Descripción: </strong>${data.description}</p>
-                        <p><strong>Precio: </strong>$${data.price}</p>
-                        <p><strong>Categoria: </strong>${data.category}</p>
+                        <p><strong>Precio: </strong>${data.price}</p>
+                        <p><strong>Categoria: </strong><a class= "dinamico" href="./category.html?category=${data.category}">${data.category}</a></p>
                         <p><strong>Stock: </strong> ${data.stock} unidades</p>
                         <p><strong>Rating: </strong> ${data.rating}/5 ⭐</p>
                         <p><strong>Tags: </strong>${data.tags ? data.tags.join(' - ') : 'N/A'}</p>
