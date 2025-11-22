@@ -13,6 +13,7 @@ if (usuarioGuardado != null) {
              let opcion = listas[i].innerText;
 
              if (opcion === "Log In|"){
+                listas[i].classList.add("liLogin");
                 listas[i].innerHTML = `
                     <span class="welcome-message">Bienvenido: ${usuarioGuardado}</span>
                     <a href="./index.html" id="logout">Logout </a>`;
